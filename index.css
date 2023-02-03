@@ -1,8 +1,9 @@
 body {
   margin-left: auto;
   margin-right: auto;
-  height: 729px;
+  height: 800px;
   width: 550px;
+  border: 2px solid black;
 }
 .upper {
   height: 285px;
@@ -45,7 +46,7 @@ h1 {
 }
 
 .lower {
-  height: 444px;
+  height: 515px;
   width: 550px;
   background: #1f2937;
   display: flex;

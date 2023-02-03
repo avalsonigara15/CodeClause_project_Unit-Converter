@@ -25,8 +25,14 @@ output3.textContent = ` ${input.value} kilogram = ${
   2.204 * input.value
 } pound | ${input.value} pound = ${input.value / 2.204} kilogram`;
 
+// Taking output field for Temperature Conversion
+let output4 = document.getElementById("temp");
+output4.textContent = `${input.value} Degree = ${
+  1.8 * input.value + 32
+} Fahrenheit | ${input.value} Fahrenheit = ${(input.value - 32) / 1.8} Degree`;
+
 function demo() {
-  for (let i = 0; i < 2; i++) {
+  for (let i = 0; i <= 2; i++) {
     switch (i) {
       case 0:
         output1.textContent = ` ${input.value} meter = ${(
@@ -47,6 +53,14 @@ function demo() {
         ).toFixed(2)} pound | ${input.value} pound = ${(
           input.value / 2.204
         ).toFixed(2)} kilogram`;
+      case 3:
+        output4.textContent = `${input.value} Degree = ${(
+          1.8 * input.value +
+          32
+        ).toFixed(2)} Fahrenheit | ${input.value} Fahrenheit = ${(
+          (input.value - 32) /
+          1.8
+        ).toFixed(2)} Degree`;
     }
   }
 }
